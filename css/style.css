@@ -1,0 +1,221 @@
+
+/*main rules **********************************************************/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 100%;
+	/*height: 100vh;*/
+	font-family: 'Laila', serif;
+}
+section{
+	width: 100%
+}
+button{
+	border:none;
+	background-color: #fff;
+	cursor: pointer;
+	font-family: 'Laila', serif;
+}
+.main_flex_nowrap{
+	display: flex;
+	flex-flow: row nowrap;
+}
+.main_flex{
+	display: flex;
+}
+.main_flex_wrap{
+	display: flex;
+	flex-flow: row wrap;
+}
+.main_flex_column{
+	display: flex;
+	flex-flow: column;
+}
+.flex_jc_sb{
+	justify-content: space-between;
+}
+.flex_jc_sa{
+	justify-content: space-around;
+}
+.flex_jc_center{
+	justify-content: center;
+}
+.flex_ai_center{
+	-ms-align-items: center;
+	align-items: center;
+}
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+/*header ************************************************************/
+
+header{
+	width: 100%;
+}
+.header-logo{
+	font-weight: 700;
+	font-size: 25px;/*25px*/
+}
+.header-logo a{
+	color: #000;
+}
+.container-header{
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+#top_nav{
+	font-size: 20px;/*20px*/
+}
+#top_nav .icon{
+	display: none;
+	position: absolute;
+}
+#top_nav a{	
+	color: #000;
+}
+#top_nav a:not(:last-child){
+	margin-right: 3.21vw;/*45px 3.21vw*/
+}
+
+/* home ***************************************************************/
+
+#home{
+	width: 100%;
+	background: url(../img/header/pexels-photo-356056.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	/*overflow: hidden;*/
+	padding-top: 180px;
+	padding-bottom: 100px;
+}
+.text{
+	color: #fff;
+	margin-bottom: 100px;
+}
+h1{
+	font-size: 60px;
+	margin-bottom: 30px ;
+}
+.text p{
+	font-size: 22px;
+}
+#home button{
+	padding: 25px 30px;
+	width: 220px;
+	border: 2px solid #fff;
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	font-size: 20px;
+	transition: border-color  .5s, background-color .5s;
+}
+#home button:hover{
+	border-color: #00897b;
+	background-color: #00897b;
+}
+#home button:first-child{
+	margin-right: 25px;
+}
+.home-button{
+	margin-bottom: 100px;
+}
+
+/* about **********************************************************/
+
+#about{
+	text-align: center;
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+h3{
+	font-size:30px;
+	margin-bottom: 35px;
+}
+#min_p{
+	font-size:15px;
+	width: 50%;
+	margin-bottom: 120px;
+	line-height: 22px;
+}
+.cards{}
+.card{
+	width: 30%;
+	background-color: #fff;
+}
+.card img{
+	margin-bottom: 40px;
+}
+.card h4{
+	margin-bottom: 20px;
+}
+.card p{
+	line-height: 22px;
+	width: 90%;
+}
+
+/* servicing ******************************************************/
+#servicing{
+	padding-top: 170px;
+	padding-bottom: 120px;
+	background-color: #e4fdf9;
+	text-align: center;
+}
+#servicing .card{
+	margin-bottom: 30px;
+	position: relative;
+}
+#servicing .card img{
+	margin-top: 55px;
+}
+.card button{
+	border: 1px solid #000;
+	padding: 18px 10px;
+	margin-top: 45px;
+	margin-bottom: 50px;
+}
+.card button.mouse-enter{
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 18px 10px;
+	margin-top: 45px;
+	margin-bottom: 50px;
+}
+#hand{
+	display: none;
+}
+#hand .mouse-enter{
+	position: absolute;
+	top: 295px;
+}
+#servicing .card{
+	transition: background-color .5s, color .5s;
+}
+#servicing .card:hover{
+	background-color: #00897b;
+	color: #fff;
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.header-logo{
+		font-weight: 700;
+		font-size: 20px;/*25px*/
+	}
+	.container-header {
+    margin-top: 35px;
+    margin-bottom: 40px;
+	}
+	#top_nav {
+    font-size: 15px;
+	}
+}
+
